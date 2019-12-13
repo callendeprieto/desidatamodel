@@ -8,3 +8,5 @@ PIXNUM
    spectra-NSIDE-PIXNUM
    zbest-NSIDE-PIXNUM
    coadd-NSIDE-PIXNUM
+   rvtab-NSIDE-PIXNUM
+   rvmod-NSIDE-PIXNUM
