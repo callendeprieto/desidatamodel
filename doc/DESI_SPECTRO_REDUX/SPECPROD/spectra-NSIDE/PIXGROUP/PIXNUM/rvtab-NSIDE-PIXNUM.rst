@@ -58,10 +58,10 @@ VRAD       float64 km s-1 Radial velocity
 VRAD_ERR   float64 km s-1 Radial velocity error
 LOGG       float64        Log of surface gravity
 TEFF       float64 K      Effective temperature
-ALPHAFE    float64
-FEH        float64
+ALPHAFE    float64        [alpha/Fe] from template fitting
+FEH        float64        [Fe/H] from template fitting
 VSINI      float64 km s-1 Stellar rotation velocity
-NEXP       float64
+NEXP       int32
 CHISQ_TOT  float64        Total chi-square for all arms
 CHISQ_B    float64        Chi-square in the B arm
 CHISQ_C_B  float64        Chi-square in the B arm after fitting continuum only
@@ -69,16 +69,16 @@ CHISQ_R    float64        Chi-square in the R arm
 CHISQ_C_R  float64        Chi-square in the R arm after fitting continuum only
 CHISQ_Z    float64        Chi-square in the Z arm
 CHISQ_C_Z  float64        Chi-square in the Z arm after fitting continuum only
-FIBER      float64
-REF_ID     float64
+FIBER      int32
+REF_ID     int64
 TARGET_RA  float64
 TARGET_DEC float64
-TARGETID   float64        DESI targetid
-EXPID      float64
+TARGETID   int32          DESI targetid
+EXPID      int64          DESI exposure id
 SN_B       float32        Median S/N B arm
 SN_R       float32        Median S/N R arm
 SN_Z       float32        Median S/N Z arm
-SUCCESS    logical
+SUCCESS    logical        Did we succeed or fail
 ========== ======= ====== ====================================================
 
 HDU2
