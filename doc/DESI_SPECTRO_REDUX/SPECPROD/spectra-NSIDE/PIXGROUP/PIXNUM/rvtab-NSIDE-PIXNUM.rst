@@ -27,7 +27,25 @@ FITS Header Units
 HDU0
 ----
 
-This HDU has no non-standard required keywords.
+
+Required Header Keywords
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+======== ================ ==== ==============================================
+KEY      Example Value    Type Comment
+======== ================ ==== ==============================================
+TMPLCON0 desi_b           str  spectral configuration
+TMPLREV0 v200312          str  template revision
+TMPLSVR0                  str  software version used to generate template files
+TMPLCON1 desi_r           str  spectral configuration
+TMPLREV1 v200312          str  template revision
+TMPLSVR1                  str  software version used to generate template files
+TMPLCON2 desi_z           str  spectral configuration
+TMPLREV2 v200312          str  template revision
+TMPLSVR2                  str  software version used to generate template files
+CHECKSUM j0YQj0XOj0XOj0XO str  HDU checksum updated 2020-03-16T08:46:33
+DATASUM  0                str  data unit checksum updated 2020-03-16T08:46:33
+======== ================ ==== ==============================================
 
 Empty HDU.
 
@@ -56,6 +74,8 @@ Name       Type    Units  Description
 ========== ======= ====== ====================================================
 VRAD       float64 km s-1 Radial velocity
 VRAD_ERR   float64 km s-1 Radial velocity error
+VRAD_SKEW  float64        Radial velocity posterior skewness
+VRAD_KURT  float64        Radial velocity posterior kurtosis
 LOGG       float64        Log of surface gravity
 TEFF       float64 K      Effective temperature
 ALPHAFE    float64        [alpha/Fe] from template fitting
@@ -63,12 +83,14 @@ FEH        float64        [Fe/H] from template fitting
 VSINI      float64 km s-1 Stellar rotation velocity
 NEXP       int32
 CHISQ_TOT  float64        Total chi-square for all arms
+CHISQ_C_TOT float64        Total chi-square for all arms for polynomial only fit
 CHISQ_B    float64        Chi-square in the B arm
 CHISQ_C_B  float64        Chi-square in the B arm after fitting continuum only
 CHISQ_R    float64        Chi-square in the R arm
 CHISQ_C_R  float64        Chi-square in the R arm after fitting continuum only
 CHISQ_Z    float64        Chi-square in the Z arm
 CHISQ_C_Z  float64        Chi-square in the Z arm after fitting continuum only
+RVS_WARN   int64          RVSpecFit warning flag
 FIBER      int32
 REF_ID     int64
 TARGET_RA  float64
