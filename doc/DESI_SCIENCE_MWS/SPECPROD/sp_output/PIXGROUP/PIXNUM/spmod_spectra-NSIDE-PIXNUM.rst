@@ -3,7 +3,7 @@ spmod_spectra
 =============
 
 :Summary: Table with observed and best-fitting spectra 
-:Naming Convention: ``spmod_{NSIDE}-{PIXNUM}.fits``, where the first 
+:Naming Convention: ``spmod_spectra-{NSIDE}-{PIXNUM}.fits``, where the first 
     number is {NSIDE} and the second indicates the healpix number
 :Regex: ``spmod_spectra-[0-9]{3}-[0-9]{5}.fits`` 
 :File Type: FITS, 100 MB  

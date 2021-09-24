@@ -3,7 +3,7 @@ spmod_coadd
 ===========
 
 :Summary: Table with observed and best-fitting spectra for coadds
-:Naming Convention: ``spmod_{NSIDE}-{PIXNUM}.fits``, where the first 
+:Naming Convention: ``spmod_coadd-{NSIDE}-{PIXNUM}.fits``, where the first 
     number is {NSIDE} and the second indicates the healpix number
 :Regex: ``spmod_coadd-[0-9]{3}-[0-9]{5}.fits`` 
 :File Type: FITS, 100 MB  

@@ -3,8 +3,8 @@ sptab_coadd
 ===========
 
 :Summary: *This is the table with stellar parameters and abundances for coadds*
-:Naming Convention: ``sptab_{NSIDE}-{PIXNUM}.fits``, where the first number
-    is the NSIDE, and the second indicates the healpixel``
+:Naming Convention: ``sptab_coadd-{NSIDE}-{PIXNUM}.fits``, where the first number
+    is the NSIDE, and the second indicates the healpixel
 :Regex: ``sptab_coadd-[0-9]{3}-[0-9]{5}.fits`` 
 :File Type: FITS, 500 KB  
 
